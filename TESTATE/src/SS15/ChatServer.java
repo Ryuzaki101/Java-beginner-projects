@@ -1,7 +1,5 @@
 /*
  * 
- * Sujan Vamathevan
- * MatrNr: 1220859
  * 
  */
 
@@ -20,7 +18,7 @@ public class ChatServer {
 		try {
 			serverSocket = new ServerSocket(8888);
 		} catch (IOException e) {
-			System.err.println("Kann nicht auf Port 888 hören");
+			System.err.println("Kann nicht auf Port 888 hÃ¶ren");
 			System.exit(1);
 		}
 		while (listening) {
