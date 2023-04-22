@@ -1,7 +1,6 @@
 /*
  * 
- * Sujan Vamathevan
- * MatrNr: 1220859
+ * 
  * 
  */
 
@@ -50,21 +49,21 @@ public class ChatClient extends Application {
 		MenuItem auswahl = new MenuItem("_Server Auswahl");
 
 		Menu menuInfo = new Menu("_Info");
-		MenuItem ueber = new MenuItem("_‹ber");
+		MenuItem ueber = new MenuItem("_√úber");
 
 		beenden.setOnAction(new EventHandler<ActionEvent>() {
 			public void handle(ActionEvent ev) {
 
-				// Best‰tigung Dialog
+				// Best√§tigung Dialog
 				Alert alert = new Alert(AlertType.CONFIRMATION);
 				alert.setTitle("Wirklich beenden?");
-				alert.setHeaderText("Bitte das Beenden der Anwendung best‰tigen...");
+				alert.setHeaderText("Bitte das Beenden der Anwendung best√§tigen...");
 				alert.setContentText("Wollen Sie die Anwendung wirklich beenden?");
 
 				// Dialog anzeigen
 				Optional<ButtonType> result = alert.showAndWait();
 
-				// Gedr¸ckten Button auswerten
+				// Gedr√ºckten Button auswerten
 				if (result.isPresent() && result.get() == ButtonType.OK) {
 					System.exit(0);
 				}
@@ -80,7 +79,7 @@ public class ChatClient extends Application {
 				ChoiceDialog<String> dialog = new ChoiceDialog<>(choices.get(0), choices);
 				dialog.setTitle("Server Auswahl");
 				dialog.setHeaderText(null);
-				dialog.setContentText("Bitte einen Server W‰hlen:");
+				dialog.setContentText("Bitte einen Server W√§hlen:");
 
 				Optional<String> result = dialog.showAndWait();
 				if (result.isPresent()) {
@@ -124,9 +123,9 @@ public class ChatClient extends Application {
 			public void handle(ActionEvent arg0) {
 				if (cliSock == null) {
 					Alert alert = new Alert(AlertType.ERROR);
-					alert.setTitle("Server ausw‰hlen");
+					alert.setTitle("Server ausw√§hlen");
 					alert.setHeaderText(null);
-					alert.setContentText("Bitte zuerst einen Server ausw‰hlen");
+					alert.setContentText("Bitte zuerst einen Server ausw√§hlen");
 					alert.showAndWait();
 				} else if (textField.getText().equals("")){
 					Alert alert = new Alert(AlertType.WARNING);
