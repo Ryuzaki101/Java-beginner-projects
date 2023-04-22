@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<fx:root minHeight="500.0" prefWidth="500.0" type="BorderPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <left>
+      <Button fx:id="left" maxHeight="1.7976931348623157E308" mnemonicParsing="false" text="Links" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Button fx:id="right" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Rechts" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <Button fx:id="center" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCenterButton" text="Mitte" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Überschrift" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <TextField fx:id="textField" BorderPane.alignment="CENTER" />
+   </bottom>
+</fx:root>

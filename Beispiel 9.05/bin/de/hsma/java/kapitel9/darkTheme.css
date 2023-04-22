@@ -1,0 +1,17 @@
+.root {
+    -fx-base: black;
+}
+.button {
+    -fx-background-color: darkgrey;
+    -fx-background-radius: 30, 30, 29, 28;
+}
+.button:hover {
+	-fx-background-color: grey;
+}
+.label {
+    -fx-text-fill: white;
+}
+.label.header {
+    -fx-font-size: 20;
+}
+
